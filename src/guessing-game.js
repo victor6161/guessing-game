@@ -1,5 +1,8 @@
 class GuessingGame {
-    constructor() {}
+    constructor() {
+       
+        
+    }
 
         
    
@@ -10,15 +13,17 @@ class GuessingGame {
     }
 
     guess() {
-        return parseInt(Math.ceil((this.min  + this.max )/2));
+        return this.mid = Math.round((this.min  + this.max )/2);
     }
 
     lower() {
-        this.max = this.min + ( -this.min + this.max )/2 + 1 ;
+        this.max = this.mid  ;
+       
     }
 
     greater() {
-        this.min = this.min + ( -this.min + this.max )/2 - 1;
+        this.min = this.mid ;
+       
     }
 }
 
